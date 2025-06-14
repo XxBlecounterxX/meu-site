@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><a href="index.html.html">voltar para pagina central</a> <br>
+  <meta charset="UTF-8">
+  <title>Jiu-Jitsu com DIVs e Posicionamentos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Cabeçalho com posição estática (default) */
+    .header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      position: static;
+    }
+
+    /* Menu com posição sticky */
+    .menu {
+      background-color: #0059b3;
+      color: white;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+
+    .menu a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    /* Conteúdo principal com relative */
+    .conteudo {
+      position: relative;
+      padding: 20px;
+    }
+
+    /* Imagem com posicionamento absoluto */
+    .imagem-abs {
+      position: absolute;
+      top: 40px;
+      right: 20px;
+      width: 200px;
+      border: 3px solid #003366;
+    }
+
+    /* Citação com posicionamento fixed (sempre visível no canto inferior direito) */
+    .citacao-fixa {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #d9edf7;
+      border-left: 5px solid #31708f;
+      padding: 10px;
+      width: 250px;
+      font-style: italic;
+    }
+
+    /* Rodapé normal */
+    .rodape {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    /* Corrigindo sobreposição por causa da imagem absoluta */
+    .espaco-imagem {
+      height: 220px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>História do Jiu-Jitsu</h1>
+  </div>
+
+  <div class="menu">
+    <a href="home.html">Início</a>
+    <a href="jiujitsu_div.html">Jiu-Jitsu</a>
+  </div>
+
+  <div class="conteudo">
+    <p>O Jiu-Jitsu é uma arte marcial com raízes no Japão e desenvolvimento no Brasil, sendo um dos estilos mais eficazes do mundo.</p>
+
+    <div class="imagem-abs">
+      <img src="imagens/jiujitsu.jpg" alt="Jiu-Jitsu" width="200">
+    </div>
+
+    <div class="espaco-imagem"></div>
+
+    <h2>Linha do Tempo Histórica</h2>
+    <ol>
+      <li>Período Feudal Japonês – Criação do Jujutsu pelos samurais.</li>
+      <li>Final do século XIX – Judô por Jigoro Kano.</li>
+      <li>1914 – Maeda ensina a família Gracie no Brasil.</li>
+      <li>Década de 1930 – Nascimento do Jiu-Jitsu Brasileiro.</li>
+      <li>Anos 1990 – Popularização no UFC.</li>
+    </ol>
+
+    <h2>Características do Jiu-Jitsu</h2>
+    <ul>
+      <li>Técnicas de alavanca e finalização</li>
+      <li>Combate no chão (grappling)</li>
+      <li>Efetividade contra adversários maiores</li>
+      <li>Defesa pessoal e competição</li>
+    </ul>
+  </div>
+
+  <div class="citacao-fixa">
+    "Jiu-Jitsu é como xadrez humano. Cada movimento tem uma resposta." – Rickson Gracie
+  </div>
+
+  <div class="rodape">
+    &copy; 2025 História do Jiu-Jitsu
+  </div>
+
+</body>
+</html>
