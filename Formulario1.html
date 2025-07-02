@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscrição - TechEvent 2025</title>
+  <link rel="stylesheet" href="Formulario1.css">
+</head>
+<body>
+  <header>
+    <h1>Formulário de Inscrição - TechEvent 2025</h1>
+    <p>Preencha os dados abaixo para se inscrever no evento.</p>
+  </header>
+
+  <form action="#" method="post">
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" min="12" required>
+
+    <label for="nascimento">Data de nascimento:</label>
+    <input type="date" id="nascimento" name="nascimento" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+    <label for="area">Área de interesse:</label>
+    <select id="area" name="area">
+      <option value="frontend">Front-End</option>
+      <option value="backend">Back-End</option>
+      <option value="dados">Ciência de Dados</option>
+      <option value="seguranca">Segurança da Informação</option>
+    </select>
+
+    <label for="presencial">Deseja participar presencialmente?</label>
+    <input type="checkbox" id="presencial" name="presencial">
+
+    <label for="mensagem">Mensagem ou observações:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="40"></textarea>
+
+    <button type="submit">Enviar inscrição</button>
+  </form>
+
+  <footer>
+    <p><a href="portfolio.html">← Voltar para o portfólio</a></p>
+  </footer>
+</body>
+</html>
